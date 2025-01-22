@@ -1,3 +1,164 @@
-
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 100%;
+    height: 4em;
+    background-color: #fff;
+    border-bottom: ridge #87CEFA;
+  }
+  .container .nav_bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+  }
+  .container .nav_bar .rand .logo {
+    height: 3em;
+    margin-top: 0.5em;
+  }
+  .container .nav_bar .burger {
+    display: none;
+  }
+  .container .nav_bar .colla .close {
+    display: none;
+  }
+  .container .nav_bar .colla .nav .item {
+    padding: 0 20px;
+  }
+  .container .nav_bar .colla .nav .item .link {
+    color: #000;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .container {
+    max-width: 100%;
+    height: 4em;
+    background-color: #fff;
+    border-bottom: ridge #87CEFA;
+  }
+  .container .nav_bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .nav_bar .rand .logo {
+    height: 3em;
+    margin-top: 0.5em;
+  }
+  .container .nav_bar .burger {
+    display: block;
+    border: none;
+  }
+  .container .nav_bar .burger .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  .container .nav_bar .colla {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  .container .nav_bar .colla a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .container .nav_bar .colla a:hover {
+    color: #111;
+  }
+  .container .nav_bar .colla ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .container .nav_bar .colla.active {
+    left: 0;
+  }
+  .container .nav_bar .colla .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .container {
+    max-width: 100%;
+    height: 4em;
+    background-color: #fff;
+    border-bottom: ridge #87CEFA;
+  }
+  .container .nav_bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .nav_bar .rand .logo {
+    height: 3em;
+    margin-top: 0.5em;
+  }
+  .container .nav_bar .burger {
+    display: block;
+    border: none;
+  }
+  .container .nav_bar .burger .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  .container .nav_bar .colla {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  .container .nav_bar .colla a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .container .nav_bar .colla a:hover {
+    color: #111;
+  }
+  .container .nav_bar .colla ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .container .nav_bar .colla.active {
+    left: 0;
+  }
+  .container .nav_bar .colla .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
