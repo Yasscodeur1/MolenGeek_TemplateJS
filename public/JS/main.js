@@ -1,3 +1,4 @@
+// navbar
 let sidenav = document.getElementById("colla");
 let openBtn = document.getElementById("openBtn");
 let closeBtn = document.getElementById("closeBtn");
@@ -5,42 +6,42 @@ let closeBtn = document.getElementById("closeBtn");
 openBtn.onclick = openNav;
 closeBtn.onclick = closeNav;
 
-/* Set the width of the side navigation to 250px */
 function openNav() {
   sidenav.classList.add("active");
 }
 
-/* Set the width of the side navigation to 0 */
 function closeNav() {
   sidenav.classList.remove("active");
 }
 
+let linkElement = document.querySelectorAll('.link, .burger')
+
+linkElement.forEach(element => {
+    element.addEventListener('mouseover', (event) => {
+        event.target.style.filter = 'drop-shadow(0 0 0.5rem crimson)'
+        event.target.style.borderRadius = '10px'
+        event.target.style.border = 'inset'
+    })
+    element.addEventListener('mouseout', (event) => {
+        event.target.style.filter = ''
+        event.target.style.boxShadow = ''
+        event.target.style.border = ''
+    })
+});
 
 
-// var sidenav = document.getElementById("colla");
-// var openBtn = document.getElementById("openBtn");
-// var closeBtn = document.getElementById("closeBtn");
 
-// // Fonction pour vérifier la largeur de l'écran
-// function isMobile() {
-//   return window.innerWidth < 1024;
-// }
+// carousel
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
 
-// // Ouvre le menu latéral si l'écran est mobile (moins de 1024px)
-// openBtn.onclick = function () {
-//   if (isMobile()) {
-//     sidenav.classList.add("active");
-//   }
-// };
+function moveSlide(step) {
+  items[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + step + items.length) % items.length;
+  items[currentIndex].classList.add('active');
+}
 
-// // Ferme le menu latéral
-// closeBtn.onclick = function () {
-//   sidenav.classList.remove("active");
-// };
-
-// // Réactive le burger si l'écran change de taille
-// window.onresize = function () {
-//   if (!isMobile()) {
-//     sidenav.classList.remove("active");
-//   }
-// };
+// Défilement automatique toutes les 10 secondes
+setInterval(() => {
+  moveSlide(1); // Passe à la diapositive suivante
+}, 2000);
