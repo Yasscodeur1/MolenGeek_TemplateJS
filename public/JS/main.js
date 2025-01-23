@@ -21,14 +21,23 @@ linkElement.forEach(element => {
         event.target.style.filter = 'drop-shadow(0 0 0.5rem crimson)'
         event.target.style.borderRadius = '10px'
         event.target.style.border = 'inset'
+        event.target.style.backgroundColor = '#508a88'
     })
     element.addEventListener('mouseout', (event) => {
         event.target.style.filter = ''
         event.target.style.boxShadow = ''
         event.target.style.border = ''
+        event.target.style.backgroundColor = ''
     })
 });
 
+// // direger le bouton contact dans navbar vers la section contact
+// document.querySelector('a[href=".contact"]').addEventListener('click', function(e) {
+//   e.preventDefault();
+//   document.querySelector('.contact').scrollIntoView({
+//     behavior: 'smooth'
+//   });
+// });
 
 
 // carousel

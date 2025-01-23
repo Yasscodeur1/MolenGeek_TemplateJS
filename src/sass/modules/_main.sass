@@ -1,0 +1,197 @@
+// Pour les écrans de plus de 1024px
+@media screen and (min-width: 1024px)
+    main
+        margin: 0 10rem
+        .presentation
+            margin-top: 3rem
+            border-radius: 10px
+            
+
+            .titreMain
+                padding: 10px
+                h1
+                
+                p
+                    text-indent: 5%
+                    
+            .imgPresent
+                display: flex
+                
+                
+                img
+                    width: 60%
+                    border-bottom-left-radius: 10px
+                p
+                    margin-left: 10px
+                    padding: 0 10px
+                    text-indent: 10%
+                    word-break: break-all
+
+
+
+
+
+        .formation
+            margin-top: 50px
+            
+            h3
+                text-align: center
+                margin-bottom: 50px
+
+                font-family: 'Poppins', Arial, sans-serif
+                font-size: 1.5rem
+                font-weight: 700
+                color: #4CAF50
+                text-align: center
+                text-transform: uppercase
+                letter-spacing: 3px
+                background: linear-gradient(90deg, #4CAF50, #81C784)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                margin-top: 50px
+                margin-bottom: 20px
+                position: relative
+                text-shadow: 1px 1px 2px 
+            .fancy-title::after 
+                content: ''
+                width: 80px
+                height: 4px
+                background-color: #4CAF50
+                display: block
+                margin: 10px auto 0
+                
+            .button-wrapper 
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
+                min-height: 150px
+
+                .gradient-border-button 
+                    position: relative
+                    padding: 1.2rem 2.4rem
+                    font-size: 1.1rem
+                    color: white
+                    background: #1e293b
+                    border: none
+                    border-radius: 8px
+                    cursor: pointer
+                    transition: all 0.3s ease
+
+                .gradient-border-button::before 
+                    content: ''
+                    position: absolute
+                    inset: -3px
+                    background: linear-gradient(45deg, #60a5fa, #4206f4, #60a5fa)
+                    border-radius: 10px
+                    z-index: -1
+                    transition: opacity 0.3s ease
+                    animation: borderRotate 4s linear infinite
+                
+
+                @keyframes borderRotate 
+                    0%  
+                        filter: hue-rotate(0deg)
+                    100%  
+                        filter: hue-rotate(360deg)
+
+                .gradient-border-button:hover 
+                    transform: translateY(-2px)
+                    box-shadow: 0 5px 15px rgba(96, 165, 250, 0.4)
+                img
+                        width: 40%
+                
+            .courtes
+                p
+                    word-break: break-all
+            .longue
+                p
+                    margin-top: 50px
+                    word-break: break-all
+            
+            ul
+                li
+                    list-style-type: none
+                    padding: 15px
+                    display: flex 
+                    flex-direction: column
+                    justify-content: end
+
+                    a
+                        text-decoration: none
+                        color: #000
+                        
+
+// Pour les écrans entre 600px et 1023px
+@media screen and (min-width: 600px) and (max-width: 1023px)
+    main
+        margin: 0 1rem
+        .presentation
+            margin-top: 3rem
+            border-radius: 10px
+            
+
+            .titreMain
+                padding: 10px
+                h1
+                
+                p
+                    text-indent: 5%
+                    
+            .imgPresent
+                display: flex
+                
+                
+                img
+                    width: 60%
+                    border-bottom-left-radius: 10px
+                p
+                    margin-left: 10px
+                    padding: 0 10px
+                    text-indent: 10%
+                    word-break: break-all
+
+        .formation
+            display: flex
+
+// Pour les écrans plus petits que 600px
+@media screen and (max-width: 599px)
+    main
+        // margin: 0 10rem
+        .presentation
+            margin-top: 3rem
+            border-radius: 10px
+            
+
+            .titreMain
+                padding: 10px
+                h1
+                
+                p
+                    text-indent: 5%
+                    
+            .imgPresent
+                display: flex
+                
+                
+                img
+                    width: 60%
+                    border-bottom-left-radius: 10px
+                p
+                    margin-left: 10px
+                    padding: 0 10px
+                    text-indent: 10%
+                    word-break: break-all
+
+        .formation
+            display: flex
+
+
+
+// → 
+
+// → 
+
+// → 
+
+// → 
