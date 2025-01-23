@@ -1,4 +1,14 @@
 @media screen and (min-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
+  * body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
   .container {
     max-width: 100%;
     height: 4em;
@@ -12,11 +22,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    color: #000;
-    font-size: 20px;
   }
   .container .nav_bar .rand .logo {
     height: 3em;
+    border-radius: 10px;
+    margin-top: 0.5em;
   }
   .container .nav_bar .burger {
     display: none;
@@ -28,17 +38,30 @@
     padding: 0 20px;
   }
   .container .nav_bar .colla .nav .item .link {
+    text-align: center;
     color: #000;
     text-decoration: none;
-    padding: 8px 8px 8px 32px;
-    font-size: 20px;
+    padding: 8px 8px 8px 8px;
+    font-size: 13px;
     color: #818181;
     display: block;
     transition: 0.3s;
     cursor: pointer;
+    margin-top: 0.7em;
   }
   .container .nav_bar .colla .nav .item .link:hover {
     color: #fff;
+  }
+  .container .nav_bar .btn-cont a {
+    color: #818181;
+    font-size: 15px;
+    margin-top: 0.7em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .container .nav_bar .btn-cont a:hover {
+    color: #ffffff;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -112,6 +135,16 @@
     right: 25px;
     font-size: 36px;
   }
+  .container .nav_bar .btn-cont a {
+    color: #818181;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .container .nav_bar .btn-cont a:hover {
+    color: #ffffff;
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 599px) {
   .container {
@@ -178,6 +211,16 @@
     right: 25px;
     font-size: 36px;
   }
+  .container .nav_bar .btn-cont a {
+    color: #818181;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .container .nav_bar .btn-cont a:hover {
+    color: #ffffff;
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 1024px) {
   header {
@@ -194,6 +237,7 @@
     overflow: hidden;
     margin: 10em 10rem;
     border-radius: 10px;
+    box-shadow: 4px 2px 15px rgba(0, 0, 0, 0.5);
   }
   header .carousel .carousel-item {
     display: none;
@@ -299,6 +343,183 @@
   }
   header .carousel .carousel-item.active .overlay h2 {
     font-size: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    margin: 0 10rem;
+  }
+  main .presentation {
+    margin-top: 3rem;
+    border-radius: 10px;
+  }
+  main .presentation .titreMain {
+    padding: 10px;
+  }
+  main .presentation .titreMain p {
+    text-indent: 5%;
+  }
+  main .presentation .imgPresent {
+    display: flex;
+  }
+  main .presentation .imgPresent img {
+    width: 60%;
+    border-bottom-left-radius: 10px;
+  }
+  main .presentation .imgPresent p {
+    margin-left: 10px;
+    padding: 0 10px;
+    text-indent: 10%;
+    word-break: break-all;
+  }
+  main .formation {
+    margin-top: 50px;
+  }
+  main .formation h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4CAF50;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #4CAF50, #81C784);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    text-shadow: 1px 1px 2px;
+  }
+  main .formation .fancy-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #4CAF50;
+    display: block;
+    margin: 10px auto 0;
+  }
+  main .formation .button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+  }
+  main .formation .button-wrapper .gradient-border-button {
+    position: relative;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.1rem;
+    color: white;
+    background: #1e293b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  main .formation .button-wrapper .gradient-border-button::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    background: linear-gradient(45deg, #60a5fa, #4206f4, #60a5fa);
+    border-radius: 10px;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    animation: borderRotate 4s linear infinite;
+  }
+  @keyframes borderRotate {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  main .formation .button-wrapper .gradient-border-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(96, 165, 250, 0.4);
+  }
+  main .formation .button-wrapper img {
+    width: 40%;
+  }
+  main .formation .courtes p {
+    word-break: break-all;
+  }
+  main .formation .longue p {
+    margin-top: 50px;
+    word-break: break-all;
+  }
+  main .formation ul li {
+    list-style-type: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  main .formation ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  main {
+    margin: 0 1rem;
+  }
+  main .presentation {
+    margin-top: 3rem;
+    border-radius: 10px;
+  }
+  main .presentation .titreMain {
+    padding: 10px;
+  }
+  main .presentation .titreMain p {
+    text-indent: 5%;
+  }
+  main .presentation .imgPresent {
+    display: flex;
+  }
+  main .presentation .imgPresent img {
+    width: 60%;
+    border-bottom-left-radius: 10px;
+  }
+  main .presentation .imgPresent p {
+    margin-left: 10px;
+    padding: 0 10px;
+    text-indent: 10%;
+    word-break: break-all;
+  }
+  main .formation {
+    display: flex;
+  }
+}
+@media screen and (max-width: 599px) {
+  main .presentation {
+    margin-top: 3rem;
+    border-radius: 10px;
+  }
+  main .presentation .titreMain {
+    padding: 10px;
+  }
+  main .presentation .titreMain p {
+    text-indent: 5%;
+  }
+  main .presentation .imgPresent {
+    display: flex;
+  }
+  main .presentation .imgPresent img {
+    width: 60%;
+    border-bottom-left-radius: 10px;
+  }
+  main .presentation .imgPresent p {
+    margin-left: 10px;
+    padding: 0 10px;
+    text-indent: 10%;
+    word-break: break-all;
+  }
+  main .formation {
+    display: flex;
   }
 }
 

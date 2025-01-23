@@ -18,7 +18,8 @@
             .rand
                 .logo
                     height: 3em
-                    // margin-top: 0.5em
+                    border-radius: 10px
+                    margin-top: 0.5em
 
             .burger
                 display: none // Le bouton burger est caché
@@ -28,24 +29,32 @@
                     display: none // Le bouton de fermeture est caché
 
                 .nav
-                
                     .item
                         padding: 0 20px
                         .link
+                            text-align: center
                             color: #000
                             text-decoration: none
-                            padding: 8px 8px 8px 32px
-                            font-size: 20px
+                            padding: 8px 8px 8px 8px
+                            font-size: 13px
                             color: #818181
                             display: block
                             transition: 0.3s
                             cursor: pointer
+                            margin-top: 0.7em
                         .link:hover
                             color: #fff
 
             .btn-cont
-            color: #000
-            font-size: 20px
+                a
+                    color: #818181
+                    font-size: 15px
+                    margin-top: 0.7em
+                    text-decoration: none
+                    cursor: pointer
+                a:hover
+                    color: #ffffff
+                    font-size: 20px 
 
 // Pour les écrans entre 600px et 1023px
 @media screen and (min-width: 600px) and (max-width: 1023px)
@@ -128,6 +137,18 @@
                     right: 25px
                     font-size: 36px
 
+            .btn-cont
+                a
+                    color: #818181
+                    font-size: 15px  
+                    text-decoration: none
+                    cursor: pointer 
+                a:hover
+                    color: #ffffff
+                    font-size: 20px 
+            
+                    
+
 // Pour les écrans plus petits que 600px
 @media screen and (max-width: 599px)
     .container
@@ -195,3 +216,13 @@
                     top: 0
                     right: 25px
                     font-size: 36px
+
+            .btn-cont
+                a
+                    color: #818181
+                    font-size: 15px  
+                    text-decoration: none
+                    cursor: pointer 
+                a:hover
+                    color: #ffffff
+                    font-size: 20px 
