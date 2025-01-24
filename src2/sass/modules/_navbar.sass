@@ -1,0 +1,228 @@
+// Pour les écrans de plus de 1024px
+@media screen and (min-width: 1024px)
+    .container
+        max-width: 100%
+        height: 4em
+        background-color: #fff
+        border-bottom: ridge #00000021
+
+        .nav_bar
+            height: 100%
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+
+            .rand
+                height: 100%
+                padding-right: 5em
+                border-right: 2px solid #00000021
+                .logo
+                    height: 3em
+                    border-radius: 10px
+                    margin-top: 0.5em
+
+            .burger
+                display: none // Le bouton burger est caché
+
+            .colla
+                height: 100%
+                padding-top: .7em
+                border-right: 2px solid #00000021
+                .close
+                    display: none // Le bouton de fermeture est caché
+
+                .nav
+                    .item
+                        padding: 0 20px
+                        .link
+                            text-align: center
+                            color: #000
+                            text-decoration: none
+                            padding: 8px 8px 8px 8px
+                            font-size: 13px
+                            color: #071a2b
+                            display: block
+                            transition: 0.3s
+                            cursor: pointer
+                            margin-top: 0.7em
+                        .link:hover
+                            color: #fff
+
+            .btn-cont
+                a
+                    color: #818181
+                    font-size: 15px
+                    margin-top: 0.7em
+                    text-decoration: none
+                    cursor: pointer
+                a:hover
+                    color: #071a2b
+                    font-size: 20px 
+
+// Pour les écrans entre 600px et 1023px
+@media screen and (min-width: 600px) and (max-width: 1023px)
+    .container
+        max-width: 100%
+        height: 4em
+        margin: 0
+        border-bottom: ridge #87CEFA
+        background: linear-gradient( #fdfdfd, #87CEEB)
+        box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5)
+
+
+        .nav_bar
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+
+            .rand
+                .logo
+                    height: 3em
+                    margin-top: 0.5em
+
+            .burger
+                display: block
+                border: none
+
+                .burger-icon
+                    
+                    span
+                        display: block
+                        width: 35px
+                        height: 5px
+                        background-color: black
+                        margin: 6px 0
+                        
+
+            .colla
+                height: 100%
+                width: 250px
+                position: fixed
+                z-index: 1
+                top: 0
+                left: -250px
+                background-color: rgba(134, 206, 235, .5)
+                color: #fff
+                
+                
+                
+                padding-top: 60px
+                transition: left 0.5s ease
+
+                a
+                    padding: 8px 50px 8px 32px
+                    text-decoration: none
+                    font-size: 25px
+                    color: #fff
+                    display: block
+                    transition: 0.3s
+                    transition: all 0.3s ease-in-out
+
+                a:hover
+                    color: #111
+
+                ul
+                    list-style-type: none
+                    padding: 0
+                    margin: 0
+
+                &.active
+                    left: 0
+
+                .close
+                    position: absolute
+                    top: 0
+                    right: 25px
+                    font-size: 36px
+
+            .btn-cont
+                a
+                    color: #818181
+                    font-size: 15px  
+                    text-decoration: none
+                    cursor: pointer 
+                a:hover
+                    color: #ffffff
+                    font-size: 20px 
+            
+                    
+
+// Pour les écrans plus petits que 600px
+@media screen and (max-width: 599px)
+    .container
+        max-width: 100%
+        height: 4em
+        background: linear-gradient( #fdfdfd, #87CEEB)
+        border-bottom: ridge #87CEFA
+        box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5)
+
+        .nav_bar
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+
+            .rand
+                .logo
+                    height: 3em
+                    margin-top: 0.5em
+
+            .burger
+                display: block
+                border: none
+
+                .burger-icon
+                    span
+                        display: block
+                        width: 35px
+                        height: 5px
+                        background-color: black
+                        margin: 6px 0
+
+            .colla
+                height: 100%
+                width: 250px
+                position: fixed
+                z-index: 1
+                top: 0
+                left: -250px
+                background-color: rgba(134, 206, 235, .5)
+                padding-top: 60px
+                transition: left 0.5s ease
+
+                a
+                    padding: 8px 50px 8px 32px
+                    text-decoration: none
+                    font-size: 25px
+                    color: #fff
+                    display: block
+                    transition: 0.3s
+
+                a:hover
+                    color: #111
+
+                ul
+                    list-style-type: none
+                    padding: 0
+                    margin: 0
+
+                &.active
+                    left: 0
+
+                .close
+                    position: absolute
+                    top: 0
+                    right: 25px
+                    font-size: 36px
+
+            .btn-cont
+                a
+                    color: #818181
+                    font-size: 15px  
+                    text-decoration: none
+                    cursor: pointer 
+                a:hover
+                    color: #ffffff
+                    font-size: 20px 
