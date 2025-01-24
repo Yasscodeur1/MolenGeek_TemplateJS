@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/app.css">
     <title>Molengeek</title>
 </head>
@@ -34,56 +38,61 @@
                     </ul>
                 </div>
                 <div class="btn-cont">
-                    <a href="contact">Nontactez-nous</a>
+                    <a href="contact">Contactez-nous</a>
                     
                 </div>
             </nav>
         </div>
-       
-        <div class="carousel">
-            <div class="carousel-item active">
-                <img src="./public/img/developer-8829735_1280.jpg" alt="Image 1">
-                <div class="overlay">
-                    <h2>Développez vos compétences</h2>
-                </div>
-                <!-- <div class="styled">
-                    <input class="styled" type="button" size="10" value="favorites">
-                </div> -->
+        <div class="content">
+            <div class="textTitle">
+                <h3>Devenir un développeur full-stack </h3>
+                <p>Cela signifie maîtriser à la fois le front-end et le back-end. Ce parcours vous prépare à relever les défis liés à la gestion complète des applications, de l'interface utilisateur à la gestion des bases de données et des serveurs, en vous offrant une expertise solide dans l'ensemble du développement web.</p>
+                <input type="button" value="Inscrivez-vous">
             </div>
-            <div class="carousel-item">
-                <img src="./public/img/blockchain-8008051_1280.webp" alt="Image 2">
-                <div class="overlay">
-                    <h2>Explorez le monde du web</h2>
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="./public/img/developer-8829735_1280.jpg" alt="Image 1">
+                    <div class="overlay">
+                        <h2>Développez vos compétences</h2>
+                    </div>
+                    <!-- <div class="styled">
+                        <input class="styled" type="button" size="10" value="favorites">
+                    </div> -->
                 </div>
-                <!-- <div class="styled">
-                    <input class="styled" type="button" size="10" value="Add favorites">
-                </div> -->
-            </div>
-            <div class="carousel-item">
-                <img src="./public/img/computer-8070002_1280.jpg" alt="Image 3">
-                <div class="overlay">
-                    <h2>Améliorez vos outils</h2>
+                <div class="carousel-item">
+                    <img src="./public/img/blockchain-8008051_1280.webp" alt="Image 2">
+                    <div class="overlay">
+                        <h2>Explorez le monde du web</h2>
+                    </div>
+                    <!-- <div class="styled">
+                        <input class="styled" type="button" size="10" value="Add favorites">
+                    </div> -->
                 </div>
-                <!-- <div class="styled">
-                    <input  type="button" size="10" value="Add to ">
-                </div> -->
+                <div class="carousel-item">
+                    <img src="./public/img/computer-8070002_1280.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <h2>Améliorez vos outils</h2>
+                    </div>
+                    <!-- <div class="styled">
+                        <input  type="button" size="10" value="Add to ">
+                    </div> -->
+                </div>
+                <!-- <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button> -->
             </div>
-            <!-- <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button> -->
-        </div>          
+        </div>
+                 
     </header>
     <main>
         <section class="presentation">
             <div class="titreMain">
-                <h1>MolenGeek : Formation Coding, Marketing, Dévelloppement IA</h1>
+                <h1>MolenGeek : Formation Coding, Marketing & Dévelloppement IA</h1>
                 <p> <strong>MolenGeek</strong> est une plateforme innovante dédiée à la formation et à l'accompagnement dans le domaine du numérique. Le site propose des <strong>programmes de formation</strong> adaptés aux besoins actuels du marché, permettant aux apprenants d’acquérir des compétences pratiques et recherchées dans des secteurs tels que le <strong>développement web</strong>, la <strong>cybersécurité</strong>, ou encore la <strong>data science</strong>.</p>
             </div>
             <div class="imgPresent">
                 <img class="img" src="./public/img/molengeek_1.jpeg" alt="image">
                    <p> Avec une approche <strong>accessible à tous</strong>, <strong>MolenGeek</strong> offre une formation inclusive, quel que soit le niveau de départ, pour préparer ses étudiants à l’avenir digital. Le site met également en avant l’importance de <strong>l’accompagnement personnalisé</strong>, permettant à chaque individu de progresser à son rythme. <br>
-                    
                     En plus des formations, <strong>MolenGeek</strong> propose des <strong>programmes d'incubation</strong> pour les jeunes entrepreneurs souhaitant développer leurs <strong>projets numériques</strong>. Une <strong>communauté dynamique</strong> et engagée soutient les participants à chaque étape de leur parcours. <br>
-                    
                     Le site de <strong>MolenGeek</strong> est plus qu'un simple espace d'apprentissage, c'est un véritable <strong>écosystème</strong> favorisant l'<strong>insertion professionnelle</strong> et l’innovation digitale. Que vous soyez étudiant, professionnel ou entrepreneur, <strong>MolenGeek</strong> vous accompagne pour <strong>réaliser vos ambitions numériques</strong>.
                     
                     </p>
@@ -109,22 +118,48 @@
             <div>
                 <h3 class="form" >Pour ajouter des compétences <span>rapidement</span> à mon C.V.</h3>
             </div>
-            <div class="button-wrapper">
-                <img src="./public/img/molengeek_.jpg" alt="">
-                <button class="gradient-border-button">
-                    <span>Formations longues</span>
-                </button>
-                <ul class="long">
-                    <li><a href="">💾 Web Developer</a></li>
-                    <li><a href="">✔️ Marketing Digital</a></li>
-                    <li><a href="">🤖 Intelligence Artificielle</a></li>
-                </ul>
+            <div class="long">
+                <div class="button-wrapper">
+                    <img src="./public/img/molengeek_.jpg" alt="">
+                    <button class="gradient-border-button">
+                        <span>Formations longues</span>
+                    </button>
+                    <ul >
+                        <li><a href="">💾 Web Developer</a></li>
+                        <li><a href="">✔️ Marketing Digital</a></li>
+                        <li><a href="">🤖 Intelligence Artificielle</a></li>
+                    </ul>
+                </div>
+                <div class="longue">
+                    <p>Pour enrichir rapidement votre C.V. et le rendre attractif, concentrez-vous sur l'acquisition de compétences spécifiques et recherchées dans votre domaine. Explorez des formations courtes et intensives, comme celles proposées par des plateformes en ligne ou des centres de formation comme MolenGeek, pour maîtriser des outils et technologies clés. Participez à des projets pratiques ou bénévoles pour démontrer vos capacités tout en élargissant votre réseau professionnel. Inscrivez-vous à des certifications reconnues, telles que celles en gestion de projet ou en développement web, pour renforcer votre crédibilité. Enfin, mettez régulièrement à jour votre C.V. en y ajoutant ces nouvelles compétences, tout en les adaptant aux exigences des postes que vous visez.</p>
+                </div>
             </div>
-            <div class="longue">
-                <p>Pour enrichir rapidement votre C.V. et le rendre attractif, concentrez-vous sur l'acquisition de compétences spécifiques et recherchées dans votre domaine. Explorez des formations courtes et intensives, comme celles proposées par des plateformes en ligne ou des centres de formation comme MolenGeek, pour maîtriser des outils et technologies clés. Participez à des projets pratiques ou bénévoles pour démontrer vos capacités tout en élargissant votre réseau professionnel. Inscrivez-vous à des certifications reconnues, telles que celles en gestion de projet ou en développement web, pour renforcer votre crédibilité. Enfin, mettez régulièrement à jour votre C.V. en y ajoutant ces nouvelles compétences, tout en les adaptant aux exigences des postes que vous visez.</p>
+            
+        </section>
+        <section class="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5457.169765793932!2d4.338645076804666!3d50.85535537167242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e1!3m2!1sen!2sbe!4v1737636242031!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="formulaire">
+                <form class="form">
+                    <span>Name<input type="text" ></span>
+                    <span>Email *<input type="text" ></span>
+                    <span>Object<input type="text" ></span>   
+                    <span>Message * <textarea name="" id=""></textarea></span>
+                    <input class="btn" type="button" value="Submit"> 
+                </form>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="sociaux">
+            <ul >
+                <li><a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#f25535"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" /></svg><span>Facebook</span></a></li>
+                <li><a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#3f86c4"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-twitter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z" /></svg><span>Twitter</span></a></li>
+                <li><a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="#48b54a"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class=" icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg><span>Instagram</span></a></li>
+                <li><a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#f0d22b"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.083 2h-4.083a1 1 0 0 0 -1 1v11.5a1.5 1.5 0 1 1 -2.519 -1.1l.12 -.1a1 1 0 0 0 .399 -.8v-4.326a1 1 0 0 0 -1.23 -.974a7.5 7.5 0 0 0 1.73 14.8l.243 -.005a7.5 7.5 0 0 0 7.257 -7.495v-2.7l.311 .153c1.122 .53 2.333 .868 3.59 .993a1 1 0 0 0 1.099 -.996v-4.033a1 1 0 0 0 -.834 -.986a5.005 5.005 0 0 1 -4.097 -4.096a1 1 0 0 0 -.986 -.835z" /></svg><span>TikTok</span></a></li>
+            </ul>
+        </div>
+        <p>Copyright © 2025 <span class="text-primary">MolenGeek</span> - Tous droits réservés.</p>
+    </footer>
     <script src="./public/JS/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

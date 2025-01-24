@@ -14,21 +14,25 @@ function closeNav() {
   sidenav.classList.remove("active");
 }
 
-let linkElement = document.querySelectorAll('.link, .burger')
+let linkElement = document.querySelectorAll('.link, .burger ')
 
 linkElement.forEach(element => {
-    element.addEventListener('mouseover', (event) => {
-        event.target.style.filter = 'drop-shadow(0 0 0.5rem crimson)'
-        event.target.style.borderRadius = '10px'
-        event.target.style.border = 'inset'
-        event.target.style.backgroundColor = '#508a88'
-    })
-    element.addEventListener('mouseout', (event) => {
-        event.target.style.filter = ''
-        event.target.style.boxShadow = ''
-        event.target.style.border = ''
-        event.target.style.backgroundColor = ''
-    })
+  element.addEventListener('mouseover', (event) => {
+    event.target.style.border = 'drop-shadow(0 0 0.5rem crimson)'
+    event.target.style.borderWidth = '50px'
+    event.target.style.borderRadius = '10px'
+    event.target.style.borderBottom = 'outset'
+    event.target.style.backgroundColor = 'linear-gradient( #fdfdfd, #87CEEB)'
+    event.target.style.color = '#000'
+      
+  })
+  element.addEventListener('mouseout', (event) => {
+    event.target.style.filter = ''
+    event.target.style.boxShadow = ''
+    event.target.style.border = ''
+    event.target.style.backgroundColor = ''
+    event.target.style.color = ''
+  })
 });
 
 // // direger le bouton contact dans navbar vers la section contact
