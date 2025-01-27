@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/app2.css">
+    <title>Molengeek</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav_bar">
+                <a class="rand" href="#"><img class="logo" src="./public/img/MolenGeek.jpg" alt="logo"></a>
+                <a href="#" class="burger" id="openBtn">
+                    <span class="burger-icon" >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+                <div class="colla" id="colla">
+                    <a id="closeBtn" href="#" class="close">×</a>
+                    <ul class="nav">
+                        <li class="item"><a class="link" href="./index.html">CAMPUS</a></li>
+                        <li class="item"><a class="link" href="#">FORMATIONS</a></li>
+                        <li class="item"><a class="link" href="#">COWRKING</a></li>
+                        <li class="item"><a class="link" href="./index1.html">AGENDA</a></li>
+                        <li class="item"><a class="link" href="#">A PROPOS</a></li>
+                        <li class="item"><a class="link" href="#">PRESSE</a></li>
+                        <li class="item"><a class="link" href="#">SIDEGEEK</a></li>
+                        <li class="item"><a class="link" href="./index2.html">Jobs / FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="btn-cont">
+                    <a href="contact">Contactez-nous</a>
+                    
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+        <section>
+            <div class="cards">
+                <div class="card-container">
+                    <span class="pro">MolenGeek</span>
+                    
+                    <h3>Coatch Coding</h3>
+                    
+                    <p>Utilisateur design interface et <br/> front-end développer</p>
+                    <div class="buttons">
+                        <button class="primary">
+                            Postuler
+                        </button>
+                        
+                    </div>
+                    <div class="skills">
+                        <h6>Prérequis</h6>
+                        <ul>
+                            <li>UI / UX</li>
+                            <li>Front End Development</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <span class="pro">MolenGeek</span>
+                    <h3>Responsable Marketing</h3>
+                    
+                    <!-- <p>User interface designer and <br/> front-end developer</p> -->
+                    
+                    <div class="buttons">
+                        <button class="primary" >
+                            Postuler
+                        </button>
+                       
+                    </div>
+                    <div class="skills">
+                        <h6>prérequis</h6>
+                        <ul>
+                            <li>Marketing</li>
+                            <li>Communication</li>
+                            <li>Commerce</li>
+                            <li>Gestion</li>
+                            <li>Stratégie numérique</li>
+                            <li>Digital Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <span class="pro">MolenGeek</span>
+                    <h3>Comptable</h3>
+                    
+                    <p><strong>Attention aux détails </strong> <br/> pour assurer la précision des rapports financiers.</p>
+                    <div class="buttons">
+                        <button class="primary">
+                            Postuler
+                        </button>
+                    </div>
+                    <div class="skills">
+                        <h6>prérequis</h6>
+                        <ul>
+                            <li>interpréter les données financières</li>
+                            <li>Maîtrise des logiciels comptables</li>
+                            <li>normes IFRS.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section>
+            <div class="containers">
+                <h2>FAQ</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false">
+                            <span class="accordion-title">Qu'est-ce que MolenGeek et quelle est sa mission ?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        
+                        <div class="accordion-content">
+                            <p>MolenGeek est une organisation qui vise à rendre la technologie et l'entrepreneuriat accessibles à tous, peu importe leur parcours ou leurs compétences. Nous offrons un espace inclusif pour apprendre, collaborer et innover dans le domaine du numérique.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Quels types de formations proposez-vous ?</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Nous proposons plusieurs types de formations, notamment :</p>
+                            <ul>
+                                <li>Développement web et mobile</li>
+                                <li>Design UX/UI</li>
+                                <li>Gestion de projet numérique
+                                </li>
+                                <li>Initiation à la programmation pour débutants</li>
+                            </ul>
+                            <p>Ces formations sont adaptées aux niveaux débutants et avancés.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title"> Quels sont les avantages de rejoindre la communauté MolenGeek ?</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Rejoindre MolenGeek, c’est bénéficier :</p>
+                            <ul>
+                                <li>D’un réseau professionnel et dynamique</li>
+                                <li>D’un accès à des mentors expérimentés</li>
+                                <li>De ressources pour développer vos compétences numériques
+                                </li>
+                                <li>D’opportunités d’emploi et de stages grâce à nos partenariats avec des entreprises.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Dois-je avoir des compétences techniques pour rejoindre MolenGeek ?</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Absolument pas ! Nos programmes sont conçus pour accueillir des participants sans aucune expérience préalable. Que vous soyez novice ou déjà passionné de technologie, nous avons une place pour vous.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Comment puis-je m'inscrire à une formation ou un événement ?</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Vous pouvez vous inscrire directement sur notre site web. Consultez la section "Formations" ou "Événements" pour trouver les dates et les détails, puis suivez le processus d'inscription en ligne.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer>
+        <div class="sociaux">
+            <ul >
+                <li><a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#f25535"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" /></svg><span>Facebook</span></a></li>
+                <li><a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#3f86c4"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-twitter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z" /></svg><span>Twitter</span></a></li>
+                <li><a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="#48b54a"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class=" icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg><span>Instagram</span></a></li>
+                <li><a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#f0d22b"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.083 2h-4.083a1 1 0 0 0 -1 1v11.5a1.5 1.5 0 1 1 -2.519 -1.1l.12 -.1a1 1 0 0 0 .399 -.8v-4.326a1 1 0 0 0 -1.23 -.974a7.5 7.5 0 0 0 1.73 14.8l.243 -.005a7.5 7.5 0 0 0 7.257 -7.495v-2.7l.311 .153c1.122 .53 2.333 .868 3.59 .993a1 1 0 0 0 1.099 -.996v-4.033a1 1 0 0 0 -.834 -.986a5.005 5.005 0 0 1 -4.097 -4.096a1 1 0 0 0 -.986 -.835z" /></svg><span>TikTok</span></a></li>
+            </ul>
+        </div>
+        <p>Copyright © 2025 <span class="text-primary">MolenGeek</span> - Tous droits réservés.</p>
+    </footer>
+    <script src="./public/JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

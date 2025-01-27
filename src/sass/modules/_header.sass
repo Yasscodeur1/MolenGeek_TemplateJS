@@ -1,0 +1,242 @@
+@media screen and (min-width: 1024px)
+    header
+        width: 100%
+        height: calc(50em - 2.5em)
+        background-color: #fff
+        
+        // background-image: url(../../.././public/img/DALLE.webp)
+        // background-repeat: no-repeat
+        // background-size: cover
+    .content
+        display: flex
+        align-items: center
+        .textTitle
+            width: 50em
+            margin-left:5em
+            word-break: break-all 
+            input
+                background-color: #ed2d4a
+                color: #fff
+                border: none
+                border-radius: 30px
+                padding: 5px 15px
+            input:hover
+                border: outset
+                border: 3px solid #ed2d4a
+
+        .carousel
+            position: relative
+            width: 85%
+            height: 50vh
+            overflow: hidden
+            margin: 10em 10rem
+            border-radius: 10px
+            box-shadow: 4px 2px 15px rgba(0, 0, 0, 0.5)
+
+            .carousel-item
+                display: none
+                width: 100%
+
+            .carousel-item.active
+                display: block
+
+
+                img
+                    width: 100%
+                    height: 50vh
+
+                .overlay
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    color: white
+                    font-size: 1.5rem
+                    background-color: rgba(0, 0, 0, 0.5)
+                    padding: 50vh 100%
+                    border-radius: 8px
+                    text-align: center
+                    width: fit-content
+                    white-space: nowrap
+                    overflow: hidden
+            .btn
+                display: flex
+                justify-content: space-between
+                padding: 0
+                margin: 0
+                .prev
+                    // height: 50vh
+                    osition: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    background-color: rgba(0, 0, 0, 0.6)
+                    color: white
+                    border: none
+                    padding: 10px 20px
+                    margin-top: 8.5em
+                    border-radius: 50%
+                    cursor: pointer
+                    font-size: 1.5rem
+                    z-index: 10
+                .next
+                    osition: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    background-color: rgba(0, 0, 0, 0.6)
+                    color: white
+                    border: none
+                    padding: 10px 20px
+                    margin-top: 8.5em
+                    margin-left: 7em
+                    border-radius: 50%
+                    cursor: pointer
+                    font-size: 1.5rem
+                    z-index: 10
+                .prev
+                    left: 10px
+
+                .next
+                    right: 10px
+            
+        .carousel-indicateur
+            position: absolute
+            bottom: 210px
+            left: 65%
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 10px
+            margin-top: 20px
+
+            .dot 
+                width: 12px
+                height: 12px
+                background-color: #333
+                border-radius: 50%
+                cursor: pointer
+                transition: background-color 0.3s ease
+
+            .dot.active 
+                background-color: #ddd
+
+
+@media screen and (min-width: 600px) and (max-width: 1023px)
+    header
+        width: 100%
+        height: auto
+        background-color: #ffffff
+
+    .content
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        .textTitle
+            width: 40em
+            margin-left: 9em
+            margin-top:3em 
+            word-break: break-all   
+            input
+                background-color: #ed2d4a
+                color: #fff
+                border: none
+                border-radius: 30px
+                padding: 5px 15px
+            input:hover
+                border: outset
+                border: 3px solid #ed2d4a    
+
+        .carousel
+            position: relative
+            width: 70%
+            height: 50vh
+            margin: 5em auto
+            border-radius: 8px
+            // margin-bottom: 30em
+
+            .carousel-item
+                display: none
+                // width: 100%
+
+                &.active
+                    display: block
+
+                    img
+                        width: 100%
+                        height: 40vh
+
+                    .overlay
+                        position: absolute
+                        background-color: rgba(0, 0, 0, 0.5)
+                        color: #fff
+                        top: 0%
+                        left: 0%
+                        width: 100%
+                        height: 40vh
+                        text-align: center
+                        padding-top: 8em
+                        white-space: nowrap
+                        h2
+                            font-size: 1em
+
+
+@media screen and (max-width: 599px)
+     header
+        width: 100%
+        height: auto
+        background-color: #ffffff
+
+        .content
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            .textTitle
+                width: 50em
+                margin-left:5em
+                margin-top: 3em
+                p
+                    display: none
+                    
+                input
+                    background-color: #ed2d4a
+                    color: #fff
+                    border: none
+                    border-radius: 30px
+                    padding: 5px 15px
+                input:hover
+                    border: outset
+                    border: 3px solid #ed2d4a
+
+        .carousel
+            position: relative
+            width: 70%
+            height: 50vh
+            margin: 6em auto
+            border-radius: 5px
+
+            .carousel-item
+                display: none
+                width: 100%
+
+                &.active
+                    display: block
+
+                    img
+                        width: 100%
+                        height: 30vh
+
+                    .overlay
+                        position: absolute
+                        background-color: rgba(0, 0, 0, 0.5)
+                        color: #fff
+                        top: 0%
+                        left: 0%
+                        width: 100%
+                        height: 30vh
+                        text-align: center
+                        padding-top: 6em
+                        white-space: nowrap
+
+                        h2
+                            font-size: 1em
+
+
