@@ -13,7 +13,7 @@
         .textTitle
             width: 50em
             margin-left:5em
-                
+            word-break: break-all 
             input
                 background-color: #ed2d4a
                 color: #fff
@@ -26,7 +26,7 @@
 
         .carousel
             position: relative
-            width: 80%
+            width: 85%
             height: 50vh
             overflow: hidden
             margin: 10em 10rem
@@ -59,16 +59,90 @@
                     width: fit-content
                     white-space: nowrap
                     overflow: hidden
+            .btn
+                display: flex
+                justify-content: space-between
+                padding: 0
+                .prev
+                    // height: 50vh
+                    osition: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    background-color: rgba(0, 0, 0, 0.6)
+                    color: white
+                    border: none
+                    padding: 10px 20px
+                    margin-top: 8.5em
+                    border-radius: 50%
+                    cursor: pointer
+                    font-size: 1.5rem
+                    z-index: 10
+                .next
+                    osition: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    background-color: rgba(0, 0, 0, 0.6)
+                    color: white
+                    border: none
+                    padding: 10px 20px
+                    margin-top: 8.5em
+                    margin-left: 7em
+                    border-radius: 50%
+                    cursor: pointer
+                    font-size: 1.5rem
+                    z-index: 10
+                .prev
+                    left: 10px
 
-                .styled
-                    
+                .next
+                    right: 10px
+            
+        .carousel-indicateur
+            position: absolute
+            bottom: 210px
+            left: 65%
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 10px
+            margin-top: 20px
+
+            .dot 
+                width: 12px
+                height: 12px
+                background-color: #333
+                border-radius: 50%
+                cursor: pointer
+                transition: background-color 0.3s ease
+
+            .dot.active 
+                background-color: #ddd
 
 
 @media screen and (min-width: 600px) and (max-width: 1023px)
     header
         width: 100%
         height: auto
-        background-color: #c4e5f5
+        background-color: #ffffff
+
+    .content
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        .textTitle
+            width: 40em
+            margin-left: 9em
+            margin-top:3em 
+            word-break: break-all   
+            input
+                background-color: #ed2d4a
+                color: #fff
+                border: none
+                border-radius: 30px
+                padding: 5px 15px
+            input:hover
+                border: outset
+                border: 3px solid #ed2d4a    
 
         .carousel
             position: relative
@@ -108,7 +182,28 @@
      header
         width: 100%
         height: auto
-        background-color: #c4e5f5
+        background-color: #ffffff
+
+        .content
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            .textTitle
+                width: 50em
+                margin-left:5em
+                margin-top: 3em
+                p
+                    display: none
+                    
+                input
+                    background-color: #ed2d4a
+                    color: #fff
+                    border: none
+                    border-radius: 30px
+                    padding: 5px 15px
+                input:hover
+                    border: outset
+                    border: 3px solid #ed2d4a
 
         .carousel
             position: relative

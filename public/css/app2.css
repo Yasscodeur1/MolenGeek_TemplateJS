@@ -1,9 +1,12 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 @media screen and (min-width: 1024px) {
   body {
     background-color: #dbdbdb;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 1px;
+    font-family: "Hind", sans-serif;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -19,6 +22,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    border: none;
   }
   .container .nav_bar .rand {
     height: 100%;
@@ -76,15 +80,17 @@
     max-width: 100%;
     height: 4em;
     margin: 0;
-    border-bottom: ridge #87CEFA;
-    background: linear-gradient(#fdfdfd, #87CEEB);
-    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    border-bottom: ridge rgba(0, 0, 0, 0.1294117647);
   }
   .container .nav_bar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+  }
+  .container .nav_bar .rand {
+    height: 100%;
   }
   .container .nav_bar .rand .logo {
     height: 3em;
@@ -108,7 +114,7 @@
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: rgba(134, 206, 235, 0.5);
+    background-color: rgba(106, 116, 120, 0.5);
     color: #fff;
     padding-top: 60px;
     transition: left 0.5s ease;
@@ -154,9 +160,8 @@
   .container {
     max-width: 100%;
     height: 4em;
-    background: linear-gradient(#fdfdfd, #87CEEB);
-    border-bottom: ridge #87CEFA;
-    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    border-bottom: ridge rgba(0, 0, 0, 0.1294117647);
   }
   .container .nav_bar {
     display: flex;
@@ -186,7 +191,7 @@
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: rgba(134, 206, 235, 0.5);
+    background-color: rgba(106, 116, 120, 0.5);
     padding-top: 60px;
     transition: left 0.5s ease;
   }
@@ -236,19 +241,45 @@
     background-position-y: -150px;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  header {
+    width: 100%;
+    height: 55vh;
+    background-image: url(../../.././public/img/jobs.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 599px) {
+  header {
+    width: 100%;
+    height: 55vh;
+    background-image: url(../../.././public/img/jobs.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
+  }
+}
 @media screen and (min-width: 1024px) {
   main {
     width: 100%;
     height: auto;
-    margin: auto 3em;
+    background-image: url(../../.././public/img/DALLE_1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
   }
   main section {
+    margin: 0;
+  }
+  main section .cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 1.5em;
+    margin: 0 5em;
   }
-  main .card-container {
+  main section .cards .card-container {
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
@@ -257,19 +288,19 @@
     position: relative;
     width: 250px;
     max-width: 100%;
+    height: 30em;
     text-align: center;
     margin: 3em 0;
-    border-radius: 10px;
   }
-  main .card-container .round {
+  main section .cards .card-container .round {
     width: 5em;
     border: 1px solid #03BFCB;
     border-radius: 50%;
     padding: 7px;
   }
-  main .card-container .buttons .primary {
+  main section .cards .card-container .primary {
     background-color: #454545;
-    border: 1px solid #03BFCB;
+    border: 1px solid #4a4f50;
     border-radius: 3px;
     color: #fff;
     font-family: "Montserrat", sans-serif;
@@ -277,7 +308,11 @@
     padding: 10px 25px;
     border-radius: 25px;
   }
-  main .card-container .skills {
+  main section .cards .card-container .primary:active {
+    border: 3px inset #03BFCB;
+    background-color: #224d69;
+  }
+  main section .cards .card-container .skills {
     background-color: #ffffff;
     text-align: left;
     padding: 15px;
@@ -285,12 +320,12 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-  main .card-container .skills ul {
+  main section .cards .card-container .skills ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  main .card-container .skills ul li {
+  main section .cards .card-container .skills ul li {
     border: 1px solid #2D2747;
     border-radius: 2px;
     display: inline-block;
@@ -298,19 +333,446 @@
     margin: 0 7px 7px 0;
     padding: 7px;
   }
+  main .containers {
+    margin: 0 auto;
+    padding: 4.5rem;
+    width: 60rem;
+    background-color: #dedfe0;
+    border-radius: 10px;
+  }
+  main .containers .accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 1em;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  }
+  main .containers .accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #03b5d2;
+  }
+  main .containers .accordion .accordion-item button {
+    border-bottom: 1px solid #03b5d2;
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  main .containers .accordion .accordion-item button:hover, main .containers .accordion .accordion-item button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+  }
+  main .containers .accordion .accordion-item button::after {
+    cursor: pointer;
+    color: #03b5d2;
+    content: "+";
+    display: inline-block;
+    position: absolute;
+    right: 0.95em;
+    bottom: 0.6em;
+    font-size: 1.5rem;
+    color: #7288a2;
+  }
+  main .containers .accordion .accordion-item button[aria-expanded=true]::after {
+    content: "°°";
+    top: 0.6em;
+    right: 0.9em;
+    color: #03b5d2;
+  }
+  main .containers .accordion .accordion-item button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  main .containers .accordion .accordion-item button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+    margin-right: 1em;
+  }
+  main .containers .accordion .accordion-item button button {
+    color: #03b5d2;
+  }
+  main .containers .accordion .accordion-item button .icon::after {
+    width: 0;
+  }
+  main .containers .accordion .accordion-item .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  main .containers .accordion .accordion-item .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  main .containers .accordion .accordion-item .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000;
+  }
+  main .containers .accordion .accordion-item .accordion-content {
+    opacity: 1;
+    height: 9em;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  main {
+    width: 100%;
+    height: auto;
+    background-image: url(../../.././public/img/DALLE_1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  main section {
+    margin: 0;
+  }
+  main section .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin: 0 1em;
+  }
+  main section .cards .card-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    color: #B3B8CD;
+    padding-top: 30px;
+    position: relative;
+    width: 250px;
+    max-width: 100%;
+    height: 30em;
+    text-align: center;
+    margin: 3em 0;
+  }
+  main section .cards .card-container .round {
+    width: 5em;
+    border: 1px solid #03BFCB;
+    border-radius: 50%;
+    padding: 7px;
+  }
+  main section .cards .card-container .primary {
+    background-color: #454545;
+    border: 1px solid #4a4f50;
+    border-radius: 3px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 25px;
+  }
+  main section .cards .card-container .primary:active {
+    border: 3px inset #03BFCB;
+    background-color: #224d69;
+  }
+  main section .cards .card-container .skills {
+    background-color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    margin-top: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  main section .cards .card-container .skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  main section .cards .card-container .skills ul li {
+    border: 1px solid #2D2747;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+  }
+  main .containers {
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #dedfe0;
+    border-radius: 10px;
+  }
+  main .containers .accordion {
+    width: 45em;
+  }
+  main .containers .accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 1em;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  }
+  main .containers .accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #03b5d2;
+  }
+  main .containers .accordion .accordion-item button {
+    border-bottom: 1px solid #03b5d2;
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  main .containers .accordion .accordion-item button:hover, main .containers .accordion .accordion-item button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+  }
+  main .containers .accordion .accordion-item button::after {
+    cursor: pointer;
+    color: #03b5d2;
+    content: "+";
+    display: inline-block;
+    position: absolute;
+    right: 0.95em;
+    bottom: 0.8em;
+    font-size: 1.5rem;
+    color: #7288a2;
+  }
+  main .containers .accordion .accordion-item button[aria-expanded=true]::after {
+    content: "°°";
+    top: 0.6em;
+    right: 0.9em;
+    color: #03b5d2;
+  }
+  main .containers .accordion .accordion-item button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  main .containers .accordion .accordion-item button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+    margin-right: 1em;
+  }
+  main .containers .accordion .accordion-item button button {
+    color: #03b5d2;
+  }
+  main .containers .accordion .accordion-item button .icon::after {
+    width: 0;
+  }
+  main .containers .accordion .accordion-item .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  main .containers .accordion .accordion-item .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  main .containers .accordion .accordion-item .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000;
+  }
+  main .containers .accordion .accordion-item .accordion-content {
+    opacity: 1;
+    height: 9em;
+  }
+}
+@media screen and (max-width: 599px) {
+  main {
+    width: 100%;
+    height: auto;
+    background-image: url(../../.././public/img/DALLE_1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  main section {
+    margin: 0;
+  }
+  main section .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin: 0 1em;
+  }
+  main section .cards .card-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    color: #B3B8CD;
+    padding-top: 30px;
+    position: relative;
+    width: 250px;
+    max-width: 100%;
+    height: 30em;
+    text-align: center;
+    margin: 3em 0;
+  }
+  main section .cards .card-container .round {
+    width: 5em;
+    border: 1px solid #03BFCB;
+    border-radius: 50%;
+    padding: 7px;
+  }
+  main section .cards .card-container .primary {
+    background-color: #454545;
+    border: 1px solid #4a4f50;
+    border-radius: 3px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 25px;
+  }
+  main section .cards .card-container .primary:active {
+    border: 3px inset #03BFCB;
+    background-color: #224d69;
+  }
+  main section .cards .card-container .skills {
+    background-color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    margin-top: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  main section .cards .card-container .skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  main section .cards .card-container .skills ul li {
+    border: 1px solid #2D2747;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+  }
+  main .containers {
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #dedfe0;
+    border-radius: 10px;
+  }
+  main .containers .accordion {
+    width: 25em;
+  }
+  main .containers .accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 1em;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  }
+  main .containers .accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #03b5d2;
+  }
+  main .containers .accordion .accordion-item button {
+    border-bottom: 1px solid #03b5d2;
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  main .containers .accordion .accordion-item button:hover, main .containers .accordion .accordion-item button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+  }
+  main .containers .accordion .accordion-item button::after {
+    cursor: pointer;
+    color: #03b5d2;
+    content: "+";
+    display: inline-block;
+    position: absolute;
+    right: 0.95em;
+    bottom: 1.9em;
+    font-size: 1.5rem;
+    color: #7288a2;
+  }
+  main .containers .accordion .accordion-item button[aria-expanded=true]::after {
+    content: "°°";
+    top: 0.6em;
+    right: 0.9em;
+    color: #03b5d2;
+  }
+  main .containers .accordion .accordion-item button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  main .containers .accordion .accordion-item button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+    margin-right: 1em;
+  }
+  main .containers .accordion .accordion-item button button {
+    color: #03b5d2;
+  }
+  main .containers .accordion .accordion-item button .icon::after {
+    width: 0;
+  }
+  main .containers .accordion .accordion-item .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  main .containers .accordion .accordion-item .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  main .containers .accordion .accordion-item .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000;
+  }
+  main .containers .accordion .accordion-item .accordion-content {
+    opacity: 1;
+    height: 9em;
+  }
 }
 @media screen and (min-width: 1024px) {
   footer {
     width: 100%;
     height: 3.5em;
-    background-color: #fff;
     text-align: center;
   }
   footer p {
     height: 3em;
     font-size: 0.7em;
     color: rgba(108, 100, 100, 0.4235294118);
-    margin-top: 1em;
   }
   footer .sociaux {
     width: 100%;
@@ -332,6 +794,161 @@
   }
   footer .sociaux ul li a span {
     margin: 0 25px;
+    color: #fff;
+  }
+  footer .contentPart {
+    position: relative;
+    width: 320px;
+    height: 35vh;
+    margin: 100px auto 0 auto;
+    perspective: 1500px;
+  }
+  footer .contentPart .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+  }
+  footer .contentPart .carousel .carousel__face {
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+  }
+  footer .contentPart .carousel .carousel__face span {
+    margin: auto;
+    font-size: 2rem;
+  }
+  footer .contentPart .carousel .carousel__face:nth-child(1) {
+    background-image: url(../../.././public/img/partenaires/actiris.png);
+    transform: rotateY(0deg) translateZ(430px);
+    background-color: #dedfe0;
+  }
+  footer .contentPart .carousel .carousel__face:nth-child(2) {
+    background-image: url(../../.././public/img/partenaires/aws.png);
+    transform: rotateY(40deg) translateZ(430px);
+    background-color: #dedfe0;
+  }
+  footer .contentPart .carousel .carousel__face:nth-child(3) {
+    background-image: url(../../.././public/img/partenaires/bru-form.png);
+    transform: rotateY(80deg) translateZ(430px);
+    background-color: #dedfe0;
+  }
+  footer .contentPart .carousel .carousel__face:nth-child(4) {
+    background-image: url(../../.././public/img/partenaires/google.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotateY(120deg) translateZ(430px);
+    background-color: #dedfe0;
+  }
+  footer .contentPart .carousel .carousel__face:nth-child(5) {
+    background-image: url(../../.././public/img/partenaires/meta.png);
+    transform: rotateY(160deg) translateZ(430px);
+    background-color: #dedfe0;
+  }
+  footer .contentPart .carousel .carousel__face:nth-child(6) {
+    background-image: url(../../.././public/img/partenaires/microsoft.png);
+    transform: rotateY(200deg) translateZ(430px);
+    background-color: #dedfe0;
+  }
+  footer .contentPart .carousel .carousel__face:nth-child(7) {
+    background-image: url(../../.././public/img/partenaires/paribas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotateY(240deg) translateZ(430px);
+    background-color: #dedfe0;
+  }
+  footer .contentPart .carousel .carousel__face:nth-child(8) {
+    background-image: url(../../.././public/img/partenaires/proximus.png);
+    transform: rotateY(280deg) translateZ(430px);
+    background-color: #dedfe0;
+  }
+  footer .contentPart .carousel .carousel__face:nth-child(9) {
+    background-image: url(../../.././public/img/partenaires/pwc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotateY(320deg) translateZ(430px);
+    background-color: #dedfe0;
+  }
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  footer {
+    width: 100%;
+    height: 3.5em;
+    text-align: center;
+  }
+  footer p {
+    height: 3em;
+    font-size: 0.7em;
+    color: rgba(108, 100, 100, 0.4235294118);
+  }
+  footer .sociaux {
+    width: 100%;
+    height: 5.5em;
+    background: #444;
+    top: 0;
+  }
+  footer .sociaux ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2em;
+  }
+  footer .sociaux ul li {
+    list-style-type: none;
+  }
+  footer .sociaux ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  footer .sociaux ul li a span {
+    margin: 0 25px;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 599px) {
+  footer {
+    width: 100%;
+    height: 3.5em;
+    text-align: center;
+  }
+  footer p {
+    height: 3em;
+    font-size: 0.7em;
+    color: rgba(108, 100, 100, 0.4235294118);
+  }
+  footer .sociaux {
+    width: 100%;
+    height: 5.5em;
+    background: #444;
+    top: 0;
+  }
+  footer .sociaux ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2em;
+  }
+  footer .sociaux ul li {
+    list-style-type: none;
+  }
+  footer .sociaux ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  footer .sociaux ul li a span {
     color: #fff;
   }
 }
