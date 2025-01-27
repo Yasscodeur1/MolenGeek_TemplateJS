@@ -1,3 +1,28 @@
+// accodrion
+const elements = document.querySelectorAll(".accordion-item button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute("aria-expanded");
+
+  // Fermer tous les autres accordéons
+  elements.forEach((item) => {
+    item.setAttribute("aria-expanded", "false");
+    item.nextElementSibling.style.maxHeight = null; // Réduire à zéro
+  });
+
+  // Déployer ou fermer l'élément courant
+  if (itemToggle === "false") {
+    this.setAttribute("aria-expanded", "true");
+    const content = this.nextElementSibling; // Élément `accordion-content`
+    content.style.maxHeight = content.scrollHeight + "px"; // Ajuste à la hauteur
+  }
+}
+
+// Ajouter les écouteurs d'événements à chaque bouton
+elements.forEach((item) => item.addEventListener("click", toggleAccordion));
+
+
+
 // navbar
 let sidenav = document.getElementById("colla");
 let openBtn = document.getElementById("openBtn");
@@ -43,18 +68,53 @@ linkElement.forEach(element => {
 //   });
 // });
 
-
-// carousel
-let currentIndex = 0;
-const items = document.querySelectorAll('.carousel-item');
-
-function moveSlide(step) {
-  items[currentIndex].classList.remove('active');
-  currentIndex = (currentIndex + step + items.length) % items.length;
-  items[currentIndex].classList.add('active');
+// scroller vers le formulaire de contact
+function scrollToContact() {
+  document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' });
 }
 
-// Défilement automatique toutes les 10 secondes
-setInterval(() => {
-  moveSlide(1); // Passe à la diapositive suivante
-}, 2000);
+
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+const dots = document.querySelectorAll('.dot');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+// Fonction pour afficher la diapositive active
+function showSlide(index) {
+    items.forEach(item => item.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    items[index].classList.add('active');
+    dots[index].classList.add('active');
+}
+
+// Navigation via boutons précédent/suivant
+function moveSlide(step) {
+    currentIndex = (currentIndex + step + items.length) % items.length;
+    showSlide(currentIndex);
+}
+
+// Clic sur les indicateurs (points)
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentIndex = index;
+        showSlide(index);
+    });
+});
+
+// Défilement automatique
+const interval = setInterval(() => {
+    moveSlide(1);
+}, 5000);
+
+// Arrêter le défilement automatique lors de l'interaction
+prevButton.addEventListener('click', () => {
+    clearInterval(interval);
+    moveSlide(-1);
+});
+
+nextButton.addEventListener('click', () => {
+    clearInterval(interval);
+    moveSlide(1);
+});
+

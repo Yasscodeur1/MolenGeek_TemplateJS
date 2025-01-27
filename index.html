@@ -34,7 +34,7 @@
                         <li class="item"><a class="link" href="#">A PROPOS</a></li>
                         <li class="item"><a class="link" href="#">PRESSE</a></li>
                         <li class="item"><a class="link" href="#">SIDEGEEK</a></li>
-                        <li class="item"><a class="link" href="#">Jobs</a></li>
+                        <li class="item"><a class="link" href="./index2.html">Jobs / FAQ</a></li>
                     </ul>
                 </div>
                 <div class="btn-cont">
@@ -45,9 +45,9 @@
         </div>
         <div class="content">
             <div class="textTitle">
-                <h3>Devenir un développeur full-stack </h3>
+                <h3>Devenir développeur full-stack </h3>
                 <p>Cela signifie maîtriser à la fois le front-end et le back-end. Ce parcours vous prépare à relever les défis liés à la gestion complète des applications, de l'interface utilisateur à la gestion des bases de données et des serveurs, en vous offrant une expertise solide dans l'ensemble du développement web.</p>
-                <input type="button" value="Inscrivez-vous">
+                <input type="button" value="Inscrivez-vous" onclick="scrollToContact()">
             </div>
             <div class="carousel">
                 <div class="carousel-item active">
@@ -57,28 +57,32 @@
                     </div>
                     <!-- <div class="styled">
                         <input class="styled" type="button" size="10" value="favorites">
-                    </div> -->
+                    </div>  -->
                 </div>
                 <div class="carousel-item">
                     <img src="./public/img/blockchain-8008051_1280.webp" alt="Image 2">
                     <div class="overlay">
                         <h2>Explorez le monde du web</h2>
                     </div>
-                    <!-- <div class="styled">
-                        <input class="styled" type="button" size="10" value="Add favorites">
-                    </div> -->
+                    
                 </div>
                 <div class="carousel-item">
                     <img src="./public/img/computer-8070002_1280.jpg" alt="Image 3">
                     <div class="overlay">
                         <h2>Améliorez vos outils</h2>
                     </div>
-                    <!-- <div class="styled">
-                        <input  type="button" size="10" value="Add to ">
-                    </div> -->
+                    
                 </div>
-                <!-- <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1)">&#10095;</button> -->
+                <div class="btn">
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+                
+            </div>
+            <div class="carousel-indicateur">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
             </div>
         </div>
                  
@@ -110,7 +114,7 @@
                 <button class="gradient-border-button">
                     <span>Formations courtes</span>
                 </button>
-                <img style="width: 30%;height: 300px; margin-bottom: 50px" src="./public/img/image_CoMa.webp" alt="">
+                <img  src="./public/img/image_CoMa.webp" alt="">
             </div>
             <div class="courtes">
                 <p>Se former à un nouveau métier, comme développeur, nécessite un engagement sérieux et une planification adaptée. Il est essentiel de commencer par acquérir les bases des langages de programmation, tels que HTML, CSS, et JavaScript, pour comprendre les fondamentaux. Ensuite, il est important de compléter ces compétences par l'apprentissage de frameworks et d'outils modernes comme React ou Node.js. L'intégration de projets pratiques est cruciale pour renforcer vos compétences et développer un portfolio solide. Enfin, rejoindre une communauté, participer à des hackathons, ou s'inscrire à des formations intensives comme celles de MolenGeek peut accélérer votre progression et vous ouvrir des opportunités professionnelles.</p>
@@ -137,6 +141,7 @@
             
         </section>
         <section class="contact">
+            
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5457.169765793932!2d4.338645076804666!3d50.85535537167242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e1!3m2!1sen!2sbe!4v1737636242031!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="formulaire">
                 <form class="form">
@@ -150,7 +155,9 @@
         </section>
     </main>
     <footer>
+        <h3 style="color:rgb(113, 110, 106); font-family: roboto">PARTENAIRE</h3>
         <div class="contentPart">
+            
             <div class="carousel">
               <div class="carousel__face"></div>
               <div class="carousel__face"></div>
